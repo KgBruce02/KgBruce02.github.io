@@ -35,7 +35,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/index.html">登出</a>
                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-account-delete">删除账户</a>
-                        <a class="dropdown-item" href="#">申请管理员权限</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-manager-apply">申请管理员权限</a>
                     </div>
                 </li>
             </ul>
@@ -158,6 +158,7 @@
             </li>
 
         </ul>
+        <button type="button" class="btn btn-outline-success" style="margin-top: 1rem;width:100%" data-toggle="modal" data-target="#modal-new-project-apply">申请新增项目</button>
 
     </div>
     <!-- Button trigger modal -->
@@ -371,6 +372,70 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="modal fade" id="modal-manager-apply" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">申请管理员</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    您确认要申请管理员权限吗？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">确认</button>
+                    <button type="button" class="btn btn-info">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal new project apply -->
+    <div class="modal fade bd-example-modal-lg" id="modal-new-project-apply" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">选择您想申请的新项目</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">推荐系统</h5>
+                                <small class="text-muted"><button type="button" class="btn btn-outline-success">
+                                    申请
+                                  </button>
+                                  <button type="button" class="btn btn-outline-danger">
+                                    取消
+                                  </button></small
+                                >
+                            </div>
+                            
+              </a>
+              <a
+                href="#"
+                class="list-group-item list-group-item-action flex-column align-items-start"
+              >
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">智能搜索</h5> <small class="text-muted"><button type="button" class="btn btn-outline-success">
+                    申请
+                  </button>
+                  <button type="button" class="btn btn-outline-danger">
+                    取消
+                  </button></small
+                >
+                            </div>
+                           
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
